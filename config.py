@@ -36,7 +36,6 @@ class MuZeroConfig:
     def __post_init__(self):
         if self.tactic_set is None:
             self.tactic_set = [
-                # Keep this small initially; expand as learning stabilizes
                 "simplify", "solve-eqs", "elim-uncnstr", "propagate-values",
                 "split-clause", "tseitin-cnf"
             ]
